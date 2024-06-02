@@ -3,14 +3,14 @@
 import Button from "@/app/components/Button";
 import Modal from "@/app/components/Modal";
 import useConversation from "@/app/components/hooks/useConversation";
-import { Dialog, DialogTitle } from "@headlessui/react";
+import { Dialog,DialogTitle } from "@headlessui/react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
 import toast from "react-hot-toast";
-import { FiAlertTriangle } from "react-icons/fi";
+import {FiAlertTriangle} from "react-icons/fi"
 
-interface ConfirmModalProps {
+interface ConfirmModalProps{
     isOpen?: boolean;
     onClose: () => void;
 }
@@ -39,7 +39,7 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
             .finally(() => {
                 setIsLoading(false);
             });
-    }, [conversationId, onClose, router]);
+    }, [conversationId, router]);
 
     return (  
         <Modal
@@ -116,5 +116,5 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
         </Modal>
     );
 }
-
+ 
 export default ConfirmModal;
