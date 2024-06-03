@@ -9,7 +9,7 @@ import {
 } from "react-hook-form";
 import { BsGithub, BsGoogle } from 'react-icons/bs';
 
-import Input from "../../components/inputs/Input";
+import Input from "@/app/components/inputs/Input";
 import Button from "@/app/components/Button";
 import AuthSocialButton from "./AuthSocialButton";
 import { toast } from "react-hot-toast";
