@@ -1,12 +1,13 @@
-'use client';
+"use client";
+
 import { SessionProvider } from "next-auth/react";
 
 interface AuthContextProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export default function AuthContext({
-    children
+  children
 }: AuthContextProps) {
-    return <SessionProvider>{children}</SessionProvider>
+  return <SessionProvider>{children}</SessionProvider>
 }
