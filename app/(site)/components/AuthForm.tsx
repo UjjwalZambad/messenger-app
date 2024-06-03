@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { BsGithub, BsGoogle } from "react-icons/bs";
 
-import Input from "../../components/inputs/Input";
+import Input from "../../components/inputs/input";
 import Button from "@/app/components/Button";
 import AuthSocialButton from "./AuthSocialButton";
 import { toast } from "react-hot-toast";
